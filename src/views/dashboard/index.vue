@@ -106,9 +106,7 @@ export default {
       initWebSocket(wsuri){ //初始化weosocket
         let socket = new WebSocket(wsuri);
         socket.onmessage = e => {
-          console.log(e)
           let data = JSON.parse(e.data)
-          console.log(data)
           if(data.isAlarm){
             this.insertData(data)
           }

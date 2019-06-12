@@ -84,7 +84,6 @@ export default {
         initWebSocket(wsuri){ //初始化weosocket
             let socket = new WebSocket(wsuri);
                 socket.onmessage = e => {
-                    console.log(e.data)
                     let data = JSON.parse(e.data)
                     if(data instanceof Array){
                         for(let i in data){

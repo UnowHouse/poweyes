@@ -1,7 +1,7 @@
 <template>
     <div :class="className" :style="{height:height,width:width}"></div>
 </template>
-</<script>
+<script>
 
 import echarts from 'echarts'
 import 'echarts/theme/macarons' // echarts theme

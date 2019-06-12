@@ -78,6 +78,7 @@ export default {
       startDate:'开始日期',
       endDate:'结束日期',
       startTime: '开始时间',
+      endTime: '结束时间',
       searchPlaceHolder:'地点名称',
       location:'地点信息',
       locationType:'地点类型',

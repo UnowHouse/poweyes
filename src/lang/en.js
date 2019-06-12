@@ -31,6 +31,7 @@ export default {
       title: 'Abnormal Record Query Page',
       startDate:'Start Date',
       endDate:'End Date',
+      endTime: 'End Time',
       startTime:'Start Time',
       searchPlaceHolder:'Location Name',
       location:'Location Message',

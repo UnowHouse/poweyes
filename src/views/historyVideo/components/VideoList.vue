@@ -24,11 +24,12 @@
             <span>{{activeVideo.location}}</span>
           </div>
           <div class="text item">
-            <div class="thumbnail-describe">{{$t('history.record.startTime')}}：{{activeVideo.startTime | parseTime('{y}-{m}-{d} {h}:{i}:{s}')}}</div>
             <div class="thumbnail-describe">{{$t('history.record.location')}}：{{activeVideo.location}}</div>
             <div class="thumbnail-describe">{{$t('history.record.locationType')}}：{{activeVideo.locationType}}</div>
             <div class="thumbnail-describe">{{$t('placeInfo.region')}}：{{activeVideo.province+activeVideo.city+activeVideo.district}}</div>
             <div class="thumbnail-describe">{{$t('placeInfo.streetNum')}}：{{activeVideo.streetNum}}</div>
+            <div class="thumbnail-describe">{{$t('history.record.startTime')}}：{{activeVideo.startTime | parseTime('{y}-{m}-{d} {h}:{i}:{s}')}}</div>
+            <div class="thumbnail-describe">{{$t('history.record.endTime')}}：{{activeVideo.endTime | parseTime('{y}-{m}-{d} {h}:{i}:{s}')}}</div>
             <div class="thumbnail-describe">{{$t('history.record.alarmDuration')}}：{{alarmContinueComputed(activeVideo.startTime,activeVideo.endTime)}}</div>
             <div class="thumbnail-describe">{{$t('history.record.maxHeadCount')}}：{{activeVideo.maxHeadCount}}</div>
             <div class="thumbnail-describe">{{$t('history.record.avgHeadCount')}}：{{activeVideo.avgHeadCount}}</div>
@@ -51,6 +52,9 @@
               </div>
               <div class="thumbnail-views">
                 {{$t('history.record.alarmDuration')}}：{{alarmContinueComputed(video.startTime,video.endTime)}}
+              </div>
+              <div class="thumbnail-views">
+                {{$t('history.record.locationType')}}：{{video.locationType}}
               </div>
             </div> 
           </div> 
